@@ -40,7 +40,7 @@ const appState = (state = initial, action, data) => {
     }
 
     case 'LOG_OUT': {
-        let newState = {username: 'none', password:'', loginstate: 'logged-out', mode: 'login' };
+        let newState = {username: '', password:'', loginstate: 'logged-out', mode: 'login' };
         console.log("in LOG_OUT");
         console.log( "login.LOG_OUT: " + JSON.stringify(newState));
         window['token'] = null;

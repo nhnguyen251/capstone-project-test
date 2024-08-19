@@ -1,6 +1,9 @@
--- insert into CUSTOMERS (CUSTOMER_NAME, PASSWORD, EMAIL) VALUES ('Bruce', 'pass', 'bruce@a.com');
--- insert into CUSTOMERS (CUSTOMER_NAME, PASSWORD, EMAIL) VALUES ('Paul', 'pass', 'paul@b.com');
--- insert into CUSTOMERS (CUSTOMER_NAME, PASSWORD, EMAIL) VALUES ('Rick', 'pass', 'rick@c.com');
+insert into CUSTOMERS (CUSTOMER_NAME, PASSWORD, EMAIL) VALUES ('ruben@gmail.com', '12345', 'Ruben Woodward');
+insert into CUSTOMERS (CUSTOMER_NAME, PASSWORD, EMAIL) VALUES ('ivan@gmail.com', '12345', 'Ivan Lloyd');
+insert into CUSTOMERS (CUSTOMER_NAME, PASSWORD, EMAIL) VALUES ('braedon@gmail.com', '12345', 'Braedon Mayer');
+insert into CUSTOMERS (CUSTOMER_NAME, PASSWORD, EMAIL) VALUES ('kara@gmail.com', '12345', 'Kara Park');
+insert into CUSTOMERS (CUSTOMER_NAME, PASSWORD, EMAIL) VALUES ('valeria@gmail.com', '12345', 'Valeria Meza');
+insert into CUSTOMERS (CUSTOMER_NAME, PASSWORD, EMAIL) VALUES ('jaiden@gmail.com', '12345', 'Jaiden Rivers');
 
 insert into EVENTS (EVENT_CODE, TITLE, DESCRIPTION ) VALUES ('CNF001', 'All-Java Conference', 'Lectures and exhibits covering all Java topics' );
 insert into EVENTS (EVENT_CODE, TITLE, DESCRIPTION ) VALUES ('WKS002', 'Spring Boot Workshop', 'Hands-on Spring Boot Workshop' );

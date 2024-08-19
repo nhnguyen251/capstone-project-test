@@ -1,5 +1,5 @@
 .App {
-  padding-top: 30px;
+  padding-top: 0px;
   /* padding-left: 430px; */
   /* width: 1000px; */
   display: grid;
@@ -8,6 +8,12 @@
   row-gap: 20px;
   align-items: center;
   justify-content: center;
+}
+
+.test{
+  display: grid;
+  grid-auto-flow: column;
+  column-gap: 20px;
 }
 
 

@@ -1,5 +1,5 @@
 const initial = { 
-  usage: 'none', 
+  usage: '', 
   customer: { id: "", name: "", email: "" } ,
   event: { id: "-1", code: "", title: "", description: "" },
   registration: { id: "-1", event_id: "-1", customer_id: "-1", registration_date: -1, notes: "" }

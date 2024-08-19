@@ -8,31 +8,31 @@ const LoginForm = ({ username, password, email, loginstate, mode, handleChange, 
   return (
     <div id='login-form' className="card bg-light">
         <div>
-            <h4 className="card-header">Please Log In or Register</h4>
+            <h4 className="card-header bg-secondary text-white">Please Log In or Register</h4>
             <form >
                 <table className="table" ><tbody>
                     <tr>
                         <td>Email:</td>
-                        <td><input type={'text'} name={'username'} onChange={handleChange} 
-                             placeholder={'Enter your Email'}
+                        <td><input className='rounded' type={'text'} name={'username'} onChange={handleChange} 
+                             placeholder={'Enter an Email'}
                              value={username} /></td>
                     </tr>
                     <tr hidden={mode === 'login'}>
                         <td>Name:</td>
-                        <td><input type={'text'} name={'email'} onChange={handleChange} 
+                        <td><input className='rounded' type={'text'} name={'email'} onChange={handleChange} 
                              placeholder={'Enter your Name'}
                              value={email} /></td>
                     </tr>                    
                     <tr>
                         <td>Password:</td>
-                        <td><input type={'text'} name={'password'} onChange={handleChange} 
-                             placeholder={'Enter your Password'}
+                        <td><input className='rounded' type={'password'} name={'password'} onChange={handleChange} 
+                             placeholder={'Enter a Password'}
                              value={password}/></td>
                     </tr>                   
                 </tbody></table>
                 <input type={'button'} value="Login" className = 'btn btn-primary' hidden={mode === 'register'}
                     onClick={ (e)=>handleLoginClick(e, username, password, loginstate) }  />
-                <input type={'button'} value="Register" className = 'btn btn-primary'
+                <input type={'button'} value="Register" className = 'btn btn-outline-primary'
                     onClick={ (e)=>handleRegisterClick(e, username, password, email, loginstate, mode) }  />                    
             </form>
         </div>  

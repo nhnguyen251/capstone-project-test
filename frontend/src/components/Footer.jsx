@@ -3,11 +3,11 @@ import { logOut } from '../actions';
 import { connect } from 'react-redux'
 
 const Footer = ({login, onLogOutClick}) =>{
-    let label = "Email: " + login.username;
+    let label = "Logged in as: " + login.username;
     return (
-    <div className='card bg-light footer'>
+    <div className='card bg-light footer h-100'>
       <span style={{float:'right'}} >{label}</span>&nbsp;
-      <input style={{width:'fit-content'}} className='btn btn-primary' type="button" value='Log Out' onClick={onLogOutClick} /> 
+      <input style={{width:'fit-content'}} className='btn btn-outline-danger' type="button" value='Log Out' onClick={onLogOutClick} /> 
     </div>  
     );
   }

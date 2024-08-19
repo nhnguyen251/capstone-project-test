@@ -15,9 +15,12 @@ import './App.css';
 function CustomersModule() {
   return (
     <div>
+    <div className='test'>
       <CustomerList></CustomerList>
       <CustomerForm></CustomerForm>
+      </div>
       <Footer></Footer>      
+    
     </div>
   );
 }

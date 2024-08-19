@@ -98,7 +98,7 @@ function App({login}) {
   return (
     <Router>
     <div className="App">
-        <h1>Customer App Secured</h1>
+        <h1>Customer Management Site</h1>
         <Custom login={login} />
     </div>
     </Router>

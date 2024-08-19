@@ -27,12 +27,12 @@ class CustomerList extends React.Component {
   render() {
     return (
       <div id='customer-list' className='card bg-light' >
-        <h4 className='card-header'>List of Users/Customers</h4>
+        <h4 className='card-header'>List of Customers</h4>
         <table className='table'>
           <thead>
             <tr>
-              <th>Name</th>
               <th>Email</th>
+              <th>Name</th>
             </tr>
           </thead>
           <tbody>

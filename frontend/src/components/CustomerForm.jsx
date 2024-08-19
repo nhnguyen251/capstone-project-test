@@ -14,26 +14,26 @@ const CustomerForm = ({ customer, usage, handleChange, handleCustomerEditClick,
     <div id='customer-form' className='card bg-light' hidden={ usage === 'none'}>
         <div>
             <div className='card-header'>
-            <h4>Add or Edit a User/Customer</h4>
+            <h4>Add or Edit a Customer</h4>
             </div>
             <form >
                 <table className='table'><tbody>
                     <tr>
-                        <td>Name:</td>
+                        <td>Email:</td>
                         <td><input type={'text'} name={'name'} onChange={handleChange} 
-                             placeholder={'Customer name'}
+                             placeholder={'Enter an Email'}
                              value={customer.name} disabled={usage==='none'||usage==='view'} /></td>
                     </tr>
                     <tr>
-                        <td>Email:</td>
+                        <td>Name:</td>
                         <td><input type={'text'} name={'email'} onChange={handleChange} 
-                             placeholder={'Email'}
+                             placeholder={'Enter a Name'}
                              value={customer.email} disabled={usage==='none'||usage==='view'} /></td>
                     </tr>
                     <tr>
                         <td>Password:</td>
                         <td><input type={'text'} name={'password'} onChange={handleChange} 
-                             placeholder={'password'}
+                             placeholder={'Enter a Password'}
                              value={customer.password} disabled={usage==='none'||usage==='view'} /></td>
                     </tr>                     
                 </tbody></table>

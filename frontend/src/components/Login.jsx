@@ -8,25 +8,25 @@ const LoginForm = ({ username, password, email, loginstate, mode, handleChange, 
   return (
     <div id='login-form' className="card bg-light">
         <div>
-            <h4 className="card-header">Login Form</h4>
+            <h4 className="card-header">Please Log In or Register</h4>
             <form >
                 <table className="table" ><tbody>
                     <tr>
-                        <td>Name:</td>
+                        <td>Email:</td>
                         <td><input type={'text'} name={'username'} onChange={handleChange} 
-                             placeholder={'user name'}
+                             placeholder={'Enter your Email'}
                              value={username} /></td>
                     </tr>
                     <tr hidden={mode === 'login'}>
-                        <td>Email:</td>
+                        <td>Name:</td>
                         <td><input type={'text'} name={'email'} onChange={handleChange} 
-                             placeholder={'Email'}
+                             placeholder={'Enter your Name'}
                              value={email} /></td>
                     </tr>                    
                     <tr>
                         <td>Password:</td>
                         <td><input type={'text'} name={'password'} onChange={handleChange} 
-                             placeholder={'password'}
+                             placeholder={'Enter your Password'}
                              value={password}/></td>
                     </tr>                   
                 </tbody></table>

@@ -14,7 +14,7 @@ const CustomerForm = ({ customer, usage, handleChange, handleCustomerEditClick,
     <div id='customer-form' className='card bg-light' hidden={ usage === 'none'}>
         <div>
             <div className='card-header bg-secondary text-white'>
-            <h4>Add or Edit a Customer</h4>
+            <h4>Add or Edit a User</h4>
             </div>
             <form >
                 <table className='table'><tbody>

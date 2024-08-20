@@ -22,7 +22,8 @@ public class ServiceAPI {
 		count += 1;
 		Date date = new Date();
 		String dateformat = SimpleDateFormat.getDateTimeInstance(SimpleDateFormat.SHORT, SimpleDateFormat.FULL).format(date);
-		return "<h3>The Authentication service is up and running!</h3>" + "<br/>Instance: " + instanceId + ", " + "<br/>DateTime: " + dateformat  + "<br/>CallCount: "+count;
+		// return "<h3>The Authentication service is up and running!</h3>" + "<br/>Instance: " + instanceId + ", " + "<br/>DateTime: " + dateformat  + "<br/>CallCount: "+count;
+		return "<h3>The Authentication service is running!</h3>" + "<br/>DateTime: " + dateformat  + "<br/>CallCount: "+count;
 	}
 	
 

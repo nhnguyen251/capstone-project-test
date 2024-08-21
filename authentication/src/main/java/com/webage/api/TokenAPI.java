@@ -28,7 +28,8 @@ public class TokenAPI {
 	
 	@GetMapping
 	public String getAll() {
-		return "jwt-fake-token-asdfasdfasfa".toString();
+		// return "jwt-fake-token-asdfasdfasfa".toString();
+		return appUserToken.toString();
 	}
 	
 	@PostMapping

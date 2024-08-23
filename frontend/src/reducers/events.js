@@ -1,8 +1,8 @@
 import RestAPI from '../rest';
 
 const initial = [
-    { id: 100, code: 'CNF001', title: 'All-Java Conference', description: 'Lectures and exhibits covering all Java topics' },
-    { id: 101, code: 'CNC001', title: 'Rock Concert', description: 'Full blown rock concert' }];
+    { id: 100, code: 'ADP', title: 'Full-Stack Developer', description: 'Working frontend and backend' },
+    { id: 101, code: 'ADP', title: 'DevOps', description: 'Working on DevOps' }];
 
 const events = (state = initial, action, data) => {
     switch (action.type) {

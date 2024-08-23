@@ -23,11 +23,11 @@ const RegistrationForm = ({ registration, usage, handleChange, handleRegistratio
   return (
     <div id='registration-form'  className='card bg-light' hidden={ usage === 'none'} >
       <div>
-        <h4 className='card-header'>Register for an Event</h4> 
+        <h4 className='card-header'>Applying for a Job</h4> 
         <form >
           <table className='table'><tbody>
             <tr>
-              <td>Event:</td>
+              <td>Job Posting:</td>
                 <td>
                   <EventDropDown events={events} 
                     selectedEventId={registration.event_id} 
@@ -37,7 +37,7 @@ const RegistrationForm = ({ registration, usage, handleChange, handleRegistratio
                 </td>
             </tr>
             <tr>
-              <td>Customer:</td>
+              <td>User:</td>
               <td>
                   <CustomerDropDown customers={customers} 
                     selectedCustomerId={registration.customer_id} 
@@ -47,15 +47,15 @@ const RegistrationForm = ({ registration, usage, handleChange, handleRegistratio
               </td>              
             </tr>
             <tr>
-              <td>RegistrationDate:</td>
+              <td>Application Date:</td>
               <td><input type={'date'} name={'registration_date'} onChange={handleChange}
                 placeholder={'Registration Date'}
                 value={rdate} disabled={usage === 'none' || usage === 'view'} /></td>
             </tr>
             <tr>
-              <td>Notes:</td>
+              <td>Resume Uploaded:</td>
               <td><input type={'text'} name={'notes'} onChange={handleChange}
-                placeholder={'Notes'}
+                placeholder={'change to pdf upload'}
                 value={registration.notes} disabled={usage === 'none' || usage === 'view'} /></td>
             </tr>
           </tbody></table>

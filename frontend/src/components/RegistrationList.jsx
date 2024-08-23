@@ -49,7 +49,7 @@ class RegistrationList extends React.Component {
 
     return (
       <div id='registration-list' className='card bg-light'  >
-        <h4 className='card-header' >Event Registrations</h4>
+        <h4 className='card-header' >All Applications</h4>
         <table className='table'><tbody>
           {this.props.registrations.map(registration => {
             let event_name = this.lookupEventTitle(+registration.event_id);
@@ -70,7 +70,7 @@ class RegistrationList extends React.Component {
         </tbody></table>
         <hr></hr>
         <p style={{'paddingLeft':'10px'}}>
-        <input style={{width:'fit-content'}} className='btn btn-primary'  type={'button'} onClick={this.props.handleNewRegistrationClick} value="New Registration" />
+        <input style={{width:'fit-content'}} className='btn btn-primary'  type={'button'} onClick={this.props.handleNewRegistrationClick} value="New Application" />
           </p>         
         
       </div>

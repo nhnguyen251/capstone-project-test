@@ -13,13 +13,13 @@ const EventForm = ({ event, usage, handleChange, handleEventEditClick,
                     handleEventDeleteClick }) => (
     <div id='event-form' className="card bg-light" hidden={ usage === 'none'}>
         <div>
-            <h4 className="card-header">Add or Modify an Event</h4>
+            <h4 className="card-header">Add or Modify a Job Posting</h4>
             <form >
                 <table className="table" ><tbody>
                     <tr>
-                        <td>Code:</td>
+                        <td>Company:</td>
                         <td><input type={'text'} name={'code'} onChange={handleChange} 
-                             placeholder={'Event code'}
+                             placeholder={'Company'}
                              value={event.code} disabled={usage==='none'||usage==='view'} /></td>
                     </tr>
                     <tr>

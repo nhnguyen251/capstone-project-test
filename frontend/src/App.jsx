@@ -15,6 +15,7 @@ import './App.css';
 function CustomersModule() {
   return (
     <div>
+      <NavLinks></NavLinks>
     <div className='test'>
       <CustomerList></CustomerList>
       <CustomerForm></CustomerForm>
@@ -59,9 +60,9 @@ function HomePage() {
 function NavLinks(){
   return (
     <nav>
-    <Link type='button' className='button btn-primary btn-lg' to="/customers">Customers</Link>
-    <Link type='button' className='button btn-primary btn-lg'  to="/events">Events</Link>
-    <Link type='button' className='button btn-primary btn-lg' to="/registrations">Registrations</Link>
+    <Link type='button' className='button btn-primary btn-lg' to="/users">Users (manager view)</Link>
+    <Link type='button' className='button btn-primary btn-lg'  to="/jobpostings">Job Postings (manager view)</Link>
+    <Link type='button' className='button btn-primary btn-lg' to="/applying">Applying for Jobs (applicant view)</Link>
     </nav>
   );
 }
@@ -83,12 +84,12 @@ function Custom(props){
     console.log("YES loggedin");
     return (
       <div>
-    <Route exact path="/" render={() => (<Redirect to="/users"/>)}/>
+    <Route exact path="/" render={() => (<Redirect to="/home"/>)}/>
     <Route path="/login" component={Login} />
     <Route path="/home" component={HomePage} />
     <Route path="/users" component={CustomersModule} />
-    <Route path="/events" component={EventsModule} />
-    <Route path="/registrations" component={RegistrationsModule} />
+    <Route path="/jobpostings" component={EventsModule} />
+    <Route path="/applying" component={RegistrationsModule} />
     </div>
     )
     
@@ -101,7 +102,7 @@ function App({login}) {
   return (
     <Router>
     <div className="App">
-        <h1>User Management Site</h1>
+        <h1>Job Posting Website</h1>
         <Custom login={login} />
     </div>
     </Router>

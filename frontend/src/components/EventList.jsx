@@ -26,7 +26,7 @@ class EventList extends React.Component  {
   render() {
     return (  
       <div id='event-list'  className="card bg-light" >
-        <h4 className='card-header'>List of Events</h4>
+        <h4 className='card-header'>List of Job Postings</h4>
           <table className='table'>
           <thead>
             <tr>
@@ -47,7 +47,7 @@ class EventList extends React.Component  {
           </tbody></table>
           <hr></hr>
           <p style={{'paddingLeft':'10px'}}>
-            <input style={{width:'fit-content'}} className='btn btn-primary' type={'button'} onClick={this.props.handleNewEventClick} value="New Event" />
+            <input style={{width:'fit-content'}} className='btn btn-primary' type={'button'} onClick={this.props.handleNewEventClick} value="New Job Postings" />
           </p>          
           
       </div>
